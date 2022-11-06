@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.03em;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.header_text_container {
+    max-width: 443px;
+}
+
+.header_title {
+    font-weight: 600;
+    font-size: 68px;
+    color: #000545;
+}
+
+.header_text {
+    color: #393F4D;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.learn_more_btn {
+    min-width: 178px;
+    padding: 19px 42px;
+    color: #fff;
+    background-color: #2945FF;
+    border-radius: 100px;
+    border: none;
+}
+
+.header_img_container {
+    position: relative;
+}
+
+.img_dot_header_left,
+.img_dot_header_right {
+    position: absolute;
+    z-index: -1;
+}
+
+.img_dot_header_left {
+    top: -25px;
+    left: -25px;
+}
+
+.img_dot_header_right {
+    bottom: -45px;
+    right: -35px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learn_more_btn {
+        font-size: 18px;
+        border-radius: 60px;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+/* Bag Section */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inf_container {
+    margin: 55px 0 0 36px;
+}
+
+.inf_text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #2945FF;
+}
+
+.kyb_container {
+    margin: 14px 0 0 34px;
+}
+
+.kyb_text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 38px;
+    color: #000545;
+}
+
+.clutch_link, .backpack_link, .traveller_link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 56px 25px 33px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0 24px 0;
+}
+
+
+.clutch_header, .backpack_header, .traveller_header {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000545;
+}
+
+.clutch_text, .backpack_text, .traveller_text {
+    margin: 16px 48px 23px 48px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #393F4D;
+}
+
+.learn_more {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2945FF;
+    text-decoration: none;
+    position: relative;
+}
+
+.learn_more::after {
+    content: "";
+    width: 21px;
+    border: 2px #2945FF solid;
+    background-color: #2945FF;
+    margin: 13px auto;
+    position: absolute;
+    top: 13px;
+    left: 28px;
+}
+
+.container_hover:hover {
+    background-color: #2945FF;
+    box-shadow: 0px 11px 17px rgba(41, 69, 255, 0.2);
+    border-radius: 24px;
+    cursor: url(img/cursor.png), auto;
+}
+
+.container_hover:hover .hover{
+    color: #fff;
+}
+
+.container_hover:hover .learn_more:after {
+    border: 2px #fff solid;
+    background-color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin-left: 122px;
+    }
+
+    .learn_more::after {
+        left: 1px;
+    }
+
+    .inf_container {
+        margin: 87px 0 0 148px;
+    }
+
+    .kyb_container {
+        margin: 26px 0 0 147px;
+    }
+}
+
+/* Signup section */
+
+.signup_main {
+    display: flex;
+    justify-content: center;
+}
+
+.pic_main {
+    position: relative;
+}
+
+.pic_main::before {
+    content: "";
+    width: 93%;
+    height: 78%;
+    background-color: #2945FF;
+    position: absolute;
+    top: -24px;
+    right: -38px;
+    z-index: -1;
+}
+
+.img_dot_left,
+.img_dot_right {
+    position: absolute;
+    z-index: -1;
+}
+
+.img_dot_left {
+    top: -25px;
+    left: -25px;
+}
+
+.img_dot_right {
+    bottom: -45px;
+    right: -35px;
+}
+
+.signup_text_container {
+    position: absolute;
+    top: 58px;
+    right: 30px;
+    max-width: 380px;
+}
+
+.signup_header {
+    font-weight: 600;
+    font-size: 68px;
+    color: #fff;
+}
+
+.signup_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.signup_btn {
+    min-width: 178px;
+    padding: 19px 38px;
+    color: #fff;
+    background-color: #2945FF;
+    border-radius: 100px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+
+    .signup_main {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .pic_main::before {
+        content: "";
+        width: 100%;
+        background-color: #2945FF;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+
+    .signup_text_container {
+        top: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .signup_header {
+        font-size: 37px;
+    }
+
+    .signup_text {
+        font-size: 10px;
+    }
+
+    .signup_btn {
+        font-size: 12px;
+        border-radius: 60px;
+        border: 1px solid #FFFFFF;
+        margin: auto;
+        width: 100%;
+    }
+}
