@@ -11,6 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar Section -->
+    <nav class="nav">
+        <div class="fashion_container">
+            <h2 class="fashion_text">Fashion Haus</h2>
+        </div>
+        <div class="menu_button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+          </script>
+        <div class="navigate_container">
+            <ul class="menu">
+                <li class="menu_item"><a href="" class="menu_link">Latest News</a></li>
+                <li class="menu_item"><a href="" class="menu_link">Shopping</a></li>
+                <li class="menu_item"><a href="" class="menu_link">Blog</a></li>
+                <li class="menu_item"><a href="" class="menu_link">Community</a></li>
+                <li class="menu_item"><a href="" class="menu_link">Reviews</a></li>
+                <li class="menu_item"><a href="" class="menu_link">Members</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ./ Navbar Section -->
+
+    <!-- Header Section -->
     <header class="header">
         <div class="header_text_container">
             <h2 class="header_title">Fashion fits from the big brands.</h2>
@@ -23,14 +52,17 @@
             <img src="signup/signupdot.png" alt="" class="img_dot_header_right">
         </div>
     </header>
+    <!-- ./ Header Section -->
 
     <!-- Bag Section -->
-    <div class="inf_container">
-        <h3 class="inf_text">Information</h3>
-    </div>
-    <div class="kyb_container">
-        <h2 class="kyb_text">Know your bags</h2>
-    </div>
+        <div class="container">
+            <div class="inf_container">
+                <h3 class="inf_text">Information</h3>
+            </div>
+            <div class="kyb_container">
+                <h2 class="kyb_text">Know your bags</h2>
+            </div>
+        </div> 
     <section class="main">
         <a href="#" class="clutch_link container_hover">
             <div class="clutch_container">
@@ -54,7 +86,7 @@
                 <h4 class="traveller_header hover">The Traveller</h4>
                 <p class="traveller_text hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis tellus, malesuada vel cursus et, sodales sit amet eros.</p>
                 <p class="learn_more hover">Learn more</p>
-            </div>s
+            </div>
         </a>
     </section>
     <!-- ./ Bag Section -->

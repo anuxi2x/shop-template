@@ -9,6 +9,111 @@ body {
     letter-spacing: -0.03em;
 }
 
+/* Navbar Section */
+
+.nav {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.fashion_container {
+    flex-grow: 1;
+}
+
+.navigate_container {
+    display: flex;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.menu_link {
+    text-decoration: none;
+}
+
+.menu_item {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.menu_item:hover {
+    border: solid;
+    padding: 14px 24px;
+    color: #2945FF;
+    border-radius: 24px;
+    background-color: #2945FF;
+}
+
+.menu_item:hover .menu_link {
+    color: #fff;
+}
+
+.fashion_text {
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+    position: relative;
+}
+
+.fashion_text::after {
+    content: "";
+    border: 2px solid #2945FF; 
+    background-color: #2945FF;
+    width: 14px;   
+    position: absolute;
+    top: 25px;
+    left: 170px;
+}
+
+@media (min-width: 768px) {
+    .menu_button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigate_container {
+        display: none;
+    }
+
+    .fashion_container {
+        padding-left: 21px;
+    }
+
+    .menu_button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #2945FF;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+      .change .bar2 {opacity: 0;}
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+}
+
+/* Header Section */
+
 .header {
     display: flex;
     justify-content: center;
@@ -84,6 +189,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.container {
+    max-width: 2720px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .inf_container {
@@ -303,3 +418,4 @@ body {
         width: 100%;
     }
 }
+
